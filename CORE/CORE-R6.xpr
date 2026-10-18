@@ -76,29 +76,65 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/afifo.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/afifo.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/afifo.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/ao486/ao486.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/ao486/ao486.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/ao486/memory/avalon_mem.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/ao486/memory/avalon_mem.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/condition.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/ao486/ao486.v">
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/decode_commands.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/ao486/memory/avalon_mem.v">
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/decode_ready.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/dma.v">
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/decode_regs.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/dma.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/dma.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -111,15 +147,77 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/floppy.v">
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/execute.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/gus/gf1.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/ao486/autogen/execute_commands.v">
+        <FileInfo SFType="VHeader">
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/ao486/autogen/execute_commands.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/execute_commands.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/execute_divide.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/execute_multiply.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/execute_offset.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/execute_shift.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/fetch.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/floppy.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/floppy.v"/>
+          <Attr Name="ImportTime" Val="1788563807"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/gus/gf1.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/gus/gf1.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -132,8 +230,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/gus/gus.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/gus/gus.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/gus/gus.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -146,36 +246,46 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/ide.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/ide.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/ide.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/iobus.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/iobus.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/iobus.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/joystick.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/joystick.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/joystick.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/verilog/cache/l1_icache.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/verilog/cache/l1_icache.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/verilog/cache/l1_icache.v"/>
+          <Attr Name="ImportTime" Val="1787732375"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/verilog/cache/l2_cache.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/verilog/cache/l2_cache.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/verilog/cache/l2_cache.v"/>
+          <Attr Name="ImportTime" Val="1787730314"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -195,8 +305,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/ao486/memory/memory.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/ao486/memory/memory.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/ao486/memory/memory.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -216,29 +328,60 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/pic.v">
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/microcode.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/ao486/pipeline/pipeline.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/ao486/autogen/microcode_commands.v">
+        <FileInfo SFType="VHeader">
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/ao486/autogen/microcode_commands.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/microcode_commands.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/pit.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/pic.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/pic.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/pit_counter.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/ao486/pipeline/pipeline.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/ao486/pipeline/pipeline.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/pit.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/pit.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/pit_counter.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/pit_counter.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -265,57 +408,122 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/ps2.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/ps2.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/ps2.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/read.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/rtc.v">
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/read_commands.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/common/simple_fifo.v">
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/read_debug.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/verilog/common/simple_fifo_mlab.v">
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/read_effective_address.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/common/simple_ram.v">
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/read_mutex.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/sound.v">
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/read_segment.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/sound_dsp.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/rtc.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/rtc.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/common/simple_fifo.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/common/simple_fifo.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/verilog/common/simple_fifo_mlab.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/verilog/common/simple_fifo_mlab.v"/>
+          <Attr Name="ImportTime" Val="1787732661"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/common/simple_mult.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/system.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/common/simple_ram.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/common/simple_ram.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/sound.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/sound.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/sound_dsp.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/sound_dsp.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/system.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/system.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -328,8 +536,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/ao486/memory/tlb_memtype.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/ao486/memory/tlb_memtype.v">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/ao486/memory/tlb_memtype.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -342,842 +552,1217 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/uart.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/uart.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/uart.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/vga.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/vga.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/write.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/vga.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/ao486/autogen/write_commands.v">
+        <FileInfo SFType="VHeader">
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/ao486/autogen/write_commands.v"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/write_commands.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/av_pipeline/audio_out.v">
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/write_debug.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/write_register.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/write_stack.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/write_string.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/av_pipeline/audio_out.v">
+        <FileInfo SFType="SVerilog">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/av_pipeline/audio_out.v"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/common/cdc_vector_handshake_continuous.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/common/cdc_vector_handshake_continuous.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/channels.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/channels.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/clk_div.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/clk_div.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/control_operators.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/control_operators.sv"/>
+          <Attr Name="ImportTime" Val="1786067629"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/MiSTer/csync.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/MiSTer/csync.sv"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/dac_prep.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/dac_prep.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/decode.v">
         <FileInfo SFType="SVerilog">
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/common/cdc_vector_handshake_continuous.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/channels.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/clk_div.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/control_operators.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/MiSTer/csync.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/dac_prep.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/edge_detector.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/host_if.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/MiSTer/hq2x.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/MiSTer/iir_filter.v">
+      <File Path="$PPRDIR/src/RTL/ao486/pipeline/decode_prefix.v">
         <FileInfo SFType="SVerilog">
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/leds.sv">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/edge_detector.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/edge_detector.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/mem_multi_bank.sv">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/host_if.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/host_if.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/mem_simple_dual_port.sv">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/MiSTer/hq2x.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/MiSTer/hq2x.sv"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/mem_simple_dual_port_async_read.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/opl3.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/pipeline_sr.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/reset_sync.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/src/verilog/soc/sound/saa1099.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/MiSTer/scandoubler.v">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/MiSTer/iir_filter.v">
         <FileInfo SFType="SVerilog">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/MiSTer/iir_filter.v"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/verilog/sdram.sv">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/leds.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/leds.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/common/synchronizer.sv">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/mem_multi_bank.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/mem_multi_bank.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/timer.sv">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/mem_simple_dual_port.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/mem_simple_dual_port.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/timers.sv">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/mem_simple_dual_port_async_read.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/mem_simple_dual_port_async_read.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/sound/opl3/trick_sw_detection.sv">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/opl3.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/opl3.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/MiSTer/video_freezer.sv">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/pipeline_sr.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/pipeline_sr.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/MiSTer/video_mixer.sv">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/reset_sync.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/reset_sync.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/vhdl/bram.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/verilog/soc/sound/saa1099.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/verilog/soc/sound/saa1099.sv"/>
+          <Attr Name="ImportTime" Val="1788561736"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_DECODE_3to8.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/MiSTer/scandoubler.v">
+        <FileInfo SFType="SVerilog">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/MiSTer/scandoubler.v"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/verilog/sdram.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/verilog/sdram.sv"/>
+          <Attr Name="ImportTime" Val="1788562855"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_baud_rate_gen.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/common/synchronizer.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/common/synchronizer.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_binary2gray.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/timer.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/timer.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_counter_down_ce_ld.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/timers.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/timers.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_counter_down_ce_ld_tc.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/sound/opl3/trick_sw_detection.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/sound/opl3/trick_sw_detection.sv"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_counter_integer_down.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/MiSTer/video_freezer.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/MiSTer/video_freezer.sv"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_edge_det.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/MiSTer/video_mixer.sv">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/MiSTer/video_mixer.sv"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_edge_det_XCD.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/vhdl/bram.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/vhdl/bram.vhd"/>
+          <Attr Name="ImportTime" Val="1788577744"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_fifo_async16_rcsr_wf.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_DECODE_3to8.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_DECODE_3to8.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_fifo_async_sr.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_baud_rate_gen.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_baud_rate_gen.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_gray2binary.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_binary2gray.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_binary2gray.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_jkff.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_counter_down_ce_ld.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_counter_down_ce_ld.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_parity_gen_Serial.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_counter_down_ce_ld_tc.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_counter_down_ce_ld_tc.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_register_ce.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_counter_integer_down.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_counter_integer_down.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_shift_reg_PL_sl.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_edge_det.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_edge_det.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_shift_reg_se_sl.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_edge_det_XCD.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_edge_det_XCD.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_uart_16550.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_fifo_async16_rcsr_wf.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_fifo_async16_rcsr_wf.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_uart_Rx_8bit.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_fifo_async_sr.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_fifo_async_sr.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/RTL/soc/uart/gh_uart_Tx_8bit.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_gray2binary.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_gray2binary.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/vhdl/pc_core.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_jkff.vhd">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_jkff.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/tdp_ram.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_parity_gen_Serial.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_parity_gen_Serial.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_register_ce.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_register_ce.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_shift_reg_PL_sl.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_shift_reg_PL_sl.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_shift_reg_se_sl.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_shift_reg_se_sl.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_uart_16550.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_uart_16550.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_uart_Rx_8bit.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_uart_Rx_8bit.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/soc/uart/gh_uart_Tx_8bit.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/soc/uart/gh_uart_Tx_8bit.vhd"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/vhdl/pc_core.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/vhdl/pc_core.vhd"/>
+          <Attr Name="ImportTime" Val="1788559244"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/tdp_ram.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/tdp_ram.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/2port2clk_ram.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/2port2clk_ram.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/2port2clk_ram.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/2port2clk_ram_byteenable.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/2port2clk_ram_byteenable.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/2port2clk_ram_byteenable.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/EAE.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/EAE.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/EAE.vhd"/>
+          <Attr Name="ImportTime" Val="1792050913"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/cpu_constants.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/cpu_constants.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/cpu_constants.vhd"/>
+          <Attr Name="ImportTime" Val="1792050913"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/alu.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/alu.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/alu.vhd"/>
+          <Attr Name="ImportTime" Val="1792050913"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/alu_shifter.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/alu_shifter.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/alu_shifter.vhd"/>
+          <Attr Name="ImportTime" Val="1792050913"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/av_pipeline/vga_recover_counters.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/av_pipeline/vga_recover_counters.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/av_pipeline/vga_recover_counters.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/ram_init.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/ram_init.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/ram_init.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/av_pipeline/vga_osm.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/av_pipeline/vga_osm.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/av_pipeline/vga_osm.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/av_pipeline/video_overlay.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/av_pipeline/video_overlay.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/av_pipeline/video_overlay.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/av_pipeline/analog_pipeline.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/av_pipeline/analog_pipeline.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/av_pipeline/analog_pipeline.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/av_pipeline/ascal.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/av_pipeline/ascal.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/av_pipeline/ascal.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/M65/audio.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/M65/audio.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/M65/audio.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/tools.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/tools.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/tools.vhd"/>
+          <Attr Name="ImportTime" Val="1792050914"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/av_pipeline/video_modes_pkg.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/av_pipeline/video_modes_pkg.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/av_pipeline/video_modes_pkg.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/vhdl/globals.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/vhdl/globals.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/vhdl/globals.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/HDMI/types_pkg.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/HDMI/types_pkg.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/HDMI/types_pkg.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/cdc_stable.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/cdc_stable.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/cdc_stable.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/cdc_pulse.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/cdc_pulse.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/cdc_pulse.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/av_pipeline/video_counters.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/av_pipeline/video_counters.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/av_pipeline/video_counters.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/av_pipeline/crop.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/av_pipeline/crop.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/av_pipeline/crop.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/av_pipeline/clk_synthetic_enable.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/av_pipeline/clk_synthetic_enable.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/av_pipeline/clk_synthetic_enable.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/memory/avm_decrease.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/memory/avm_decrease.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/memory/avm_decrease.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/HDMI/sync_reg.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/HDMI/sync_reg.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/HDMI/sync_reg.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/HDMI/hdmi_tx_encoder.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/HDMI/hdmi_tx_encoder.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/HDMI/hdmi_tx_encoder.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/HDMI/vga_to_hdmi.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/HDMI/vga_to_hdmi.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/HDMI/vga_to_hdmi.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/HDMI/serialiser_10to1_selectio.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/HDMI/serialiser_10to1_selectio.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/HDMI/serialiser_10to1_selectio.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/av_pipeline/digital_pipeline.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/av_pipeline/digital_pipeline.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/av_pipeline/digital_pipeline.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/hdmi_flicker_free.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/hdmi_flicker_free.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/hdmi_flicker_free.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/av_pipeline/av_pipeline.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/av_pipeline/av_pipeline.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/av_pipeline/av_pipeline.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/memory/avm_arbit.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/memory/avm_arbit.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/memory/avm_arbit.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/memory/avm_arbit_general.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/memory/avm_arbit_general.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/memory/avm_arbit_general.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/memory/axi_fifo.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/memory/axi_fifo.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/memory/axi_fifo.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/memory/avm_fifo.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/memory/avm_fifo.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/memory/avm_fifo.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/basic_uart.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/basic_uart.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/basic_uart.vhd"/>
+          <Attr Name="ImportTime" Val="1792050913"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/QNICE/qnice_globals.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/QNICE/qnice_globals.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/QNICE/qnice_globals.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/block_ram.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/block_ram.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/block_ram.vhd"/>
+          <Attr Name="ImportTime" Val="1792050913"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/block_rom.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/block_rom.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/block_rom.vhd"/>
+          <Attr Name="ImportTime" Val="1792050913"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/bus_uart.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/bus_uart.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/bus_uart.vhd"/>
+          <Attr Name="ImportTime" Val="1792050913"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/byte_bram.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/byte_bram.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/byte_bram.vhd"/>
+          <Attr Name="ImportTime" Val="1792050913"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/vhdl/clk.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/vhdl/clk.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/src/vhdl/clk.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/clk_m2m.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/clk_m2m.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/clk_m2m.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/clock_counter.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/clock_counter.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/clock_counter.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/vhdl/config.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/vhdl/config.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/vhdl/config.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/i2c/cpu_to_i2c_master.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/i2c/cpu_to_i2c_master.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/i2c/cpu_to_i2c_master.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/cycle_counter.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/cycle_counter.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/cycle_counter.vhd"/>
+          <Attr Name="ImportTime" Val="1792050913"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/debounce.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/debounce.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/debounce.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/debouncer.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/debouncer.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/debouncer.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/fifo.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/fifo.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/fifo.vhd"/>
+          <Attr Name="ImportTime" Val="1792050913"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/HDMI/video_out_clock.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/HDMI/video_out_clock.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/HDMI/video_out_clock.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/reset_manager.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/reset_manager.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/reset_manager.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/M65/kb_matrix_ram.vhdl">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/M65/kb_matrix_ram.vhdl">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/M65/kb_matrix_ram.vhdl"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/M65/mega65kbd_to_matrix.vhdl">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/M65/mega65kbd_to_matrix.vhdl">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/M65/mega65kbd_to_matrix.vhdl"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/M65/matrix_to_keynum.vhdl">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/M65/matrix_to_keynum.vhdl">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/M65/matrix_to_keynum.vhdl"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/m2m_keyb.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/m2m_keyb.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/m2m_keyb.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/qnice_cpu.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/qnice_cpu.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/qnice_cpu.vhd"/>
+          <Attr Name="ImportTime" Val="1792050914"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/QNICE/sdmux.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/QNICE/sdmux.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/QNICE/sdmux.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/sdcard.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/sdcard.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/sdcard.vhd"/>
+          <Attr Name="ImportTime" Val="1792050914"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/QNICE/qnice_mmio.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/QNICE/qnice_mmio.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/QNICE/qnice_mmio.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/QNICE/qnice.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/QNICE/qnice.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/QNICE/qnice.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/qnice2hyperram.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/qnice2hyperram.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/qnice2hyperram.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/M65/mouse_input.vhdl">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/M65/mouse_input.vhdl">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/M65/mouse_input.vhdl"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/qnice_wrapper.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/qnice_wrapper.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/qnice_wrapper.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram_errata.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/hyperram/hyperram_errata.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram_errata.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram_config.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/hyperram/hyperram_config.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram_config.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram_ctrl.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/hyperram/hyperram_ctrl.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram_ctrl.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram_fifo.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/hyperram/hyperram_fifo.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram_fifo.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram_rx.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/hyperram/hyperram_rx.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram_rx.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram_tx.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/hyperram/hyperram_tx.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram_tx.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/controllers/hyperram/hyperram.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/controllers/hyperram/hyperram.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/i2c/rtc_master.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/i2c/rtc_master.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/i2c/rtc_master.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/i2c/rtc_controller.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/i2c/rtc_controller.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/i2c/rtc_controller.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/qnice_arbit.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/qnice_arbit.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/qnice_arbit.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/i2c/i2c_master.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/i2c/i2c_master.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/i2c/i2c_master.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/i2c/i2c_controller.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/i2c/i2c_controller.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/i2c/i2c_controller.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/i2c/rtc_wrapper.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/i2c/rtc_wrapper.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/i2c/rtc_wrapper.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/framework.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/framework.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/framework.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/vhdl/main.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/vhdl/main.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/src/vhdl/main.vhd"/>
+          <Attr Name="ImportTime" Val="1787449773"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/vhdl/vdrives.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/vhdl/vdrives.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/vhdl/vdrives.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/vhdl/mega65.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/vhdl/mega65.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/src/vhdl/mega65.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/register_file.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/register_file.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/register_file.vhd"/>
+          <Attr Name="ImportTime" Val="1792050914"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../M2M/QNICE/vhdl/sd_spi.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/M2M/QNICE/vhdl/sd_spi.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/../M2M/QNICE/vhdl/sd_spi.vhd"/>
+          <Attr Name="ImportTime" Val="1792050914"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/top/top_mega65-r6.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/top/top_mega65-r6.vhd">
         <FileInfo SFType="VHDL2008">
+          <Attr Name="ImportPath" Val="$PPRDIR/src/top/top_mega65-r6.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/ao486/memory/prefetch_control.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/ao486/memory/prefetch_control.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/ao486/memory/memory_read.v">
+        <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/ao486/memory/memory_read.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/ao486/memory/memory_write.v">
+        <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/ao486/memory/memory_write.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/RTL/ao486/exception.v">
+        <FileInfo SFType="VHeader">
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/RTL/ao486/exception.v"/>
+          <Attr Name="ImportTime" Val="1786067312"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
+          <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/vhdl/keyboard.vhd">
+      <File Path="$PSRCDIR/sources_1/imports/PC-Core/CORE/src/vhdl/keyboard.vhd">
         <FileInfo SFType="VHDL2008">
           <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/vhdl/keyboard.vhd"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -1189,20 +1774,26 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
       <Filter Type="Constrs"/>
-      <File Path="$PPRDIR/src/constraints/MEGA65-R6.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/constraints/MEGA65-R6.xdc">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/constraints/MEGA65-R6.xdc"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/constraints/common.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/constraints/common.xdc">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/constraints/common.xdc"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/src/constraints/CORE.xdc">
+      <File Path="$PSRCDIR/constrs_1/imports/constraints/CORE.xdc">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/src/constraints/CORE.xdc"/>
+          <Attr Name="ImportTime" Val="1791965129"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
@@ -1213,8 +1804,10 @@
     </FileSet>
     <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
       <Filter Type="Utils"/>
-      <File Path="$PPRDIR/m2m-rom/synth_pre.tcl">
+      <File Path="$PSRCDIR/utils_1/imports/m2m-rom/synth_pre.tcl">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/m2m-rom/synth_pre.tcl"/>
+          <Attr Name="ImportTime" Val="1792141192"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -1277,7 +1870,7 @@
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a200tfbg484-2" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
-        <Step Id="synth_design" PreStepTclHook="$PPRDIR/m2m-rom/synth_pre.tcl">
+        <Step Id="synth_design" PreStepTclHook="$PSRCDIR/utils_1/imports/m2m-rom/synth_pre.tcl">
           <Option Id="FlattenHierarchy">1</Option>
         </Step>
       </Strategy>
