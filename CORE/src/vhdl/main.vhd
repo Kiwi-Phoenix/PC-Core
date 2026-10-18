@@ -19,6 +19,10 @@ entity main is
    );
    port (
       clk_main_i              : in  std_logic;
+      clk_uart1_i             : in  std_logic;
+      clk_uart2_i             : in  std_logic;
+      clk_vga_i               : in  std_logic;
+      clk_mpu_i               : in  std_logic;
       reset_soft_i            : in  std_logic;
       reset_hard_i            : in  std_logic;
       pause_i                 : in  std_logic;
@@ -76,8 +80,21 @@ begin
    -- @TODO: Add the actual MiSTer core here
    -- The demo core's purpose is to show a test image and to make sure, that the MiSTer2MEGA65 framework
    -- can be synthesized and run stand-alone without an actual MiSTer core being there, yet
+  
+   -- DJR: TODO PC Core goes here !!!!!
+   pc_core : entity work.pc_core
+      port map (
+          reset       => reset_soft_i
+         ,clk_sys     => clk_main_i
+         ,clk_uart1   => clk_uart1_i
+         ,clk_uart2   => clk_uart2_i
+         ,clk_vga     => clk_vga_i
+         ,clk_mpu     => clk_mpu_i
+      );
 
--- DJR CORE enitity goes here!!!!
+
+
+
 
    -- On video_ce_o and video_ce_ovl_o: You have an important @TODO when porting a core:
    -- video_ce_o: You need to make sure that video_ce_o divides clk_main_i such that it transforms clk_main_i
@@ -95,21 +112,21 @@ begin
    -- might need small high-active keyboard memories, etc. This is why the MiSTer2MEGA65 framework
    -- lets you define literally everything and only provides a minimal abstraction layer to the keyboard.
    -- You need to adjust keyboard.vhd to your needs
-   i_keyboard : entity work.keyboard
-      port map (
-         clk_main_i           => clk_main_i,
+   -- i_keyboard : entity work.keyboard
+   --    port map (
+   --       clk           => clk_main_i,
 
-         -- Interface to the MEGA65 keyboard
-         key_num_i            => kb_key_num_i,
-         key_pressed_n_i      => kb_key_pressed_n_i,
+   --       -- Interface to the MEGA65 keyboard
+   --       key_num_i            => kb_key_num_i,
+   --       key_pressed_n_i      => kb_key_pressed_n_i,
 
-         -- @TODO: Create the kind of keyboard output that your core needs
-         -- "example_n_o" is a low active register and used by the demo core:
-         --    bit 0: Space
-         --    bit 1: Return
-         --    bit 2: Run/Stop
-         example_n_o          => keyboard_n
-      ); -- i_keyboard
+   --       -- @TODO: Create the kind of keyboard output that your core needs
+   --       -- "example_n_o" is a low active register and used by the demo core:
+   --       --    bit 0: Space
+   --       --    bit 1: Return
+   --       --    bit 2: Run/Stop
+   --       example_n_o          => keyboard_n
+   --    ); -- i_keyboard
 
 end architecture synthesis;
 
